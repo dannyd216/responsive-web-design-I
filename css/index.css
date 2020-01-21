@@ -170,34 +170,10 @@ h5 {
 
 
 
-/* nav {
-    display: inline-block;
-    border: 3px dashed aqua;
-    width: auto%;
-    padding: 0;
-    margin: 0;
-    background-color: darkgreen;
+/* #navLogo img {
+    width: 20%;
+
 } */
-
-
-/*
-section {
-    padding: 2% 5%;
-}
-*/
-
-/*
-nav #navlogo {
-    width: 20%;
-    display: inline-block;
-
-}
-*/
-
-#navLogo img {
-    width: 20%;
-
-}
 
 /*
 
@@ -209,16 +185,30 @@ nav #navlogo {
 */
 
 #navBar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    margin: 20px;
-    padding: 20px;
-    font-size: 35px;
+    width: 100%;
     position: fixed;
     background-color: greenyellow;
+    justify-content: space-around;
+}
+
+#navBar div {
+    width: 100%;
+}
+
+#navBar #links {
+    justify-content: space-between;
+    width: 100%;
+}
+
+#links img {
+    width: 20%;
+}
+
+#links a {
+
+    padding: 1%;
+    margin: 0;
 }
 
 /*
@@ -396,3 +386,11 @@ footer {
     text-align: center;
 
 }
+
+/**
+ *NEED TO ADD MEDIA QUERIES FOR 800px AND 500px
+*/
+
+@media (max-width: 800px) {}
+
+@media (max-width: 500px) {}
