@@ -148,9 +148,9 @@ table {
 html,
 body {
     height: 100%;
-    /* font-family: "Titillium Web", sans-serif; */
+    font-family: "Titillium Web", sans-serif;
 
-    font-family: 'Gayathri', sans-serif;
+    /* font-family: 'Gayathri', sans-serif; */
 }
 
 h1,
@@ -158,8 +158,8 @@ h2,
 h3,
 h4,
 h5 {
-    /* font-family: "Bangers", cursive;*/
-    font-family: 'Gayathri', sans-serif;
+    font-family: "Bangers", cursive;
+    /* font-family: 'Gayathri', sans-serif; */
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
@@ -170,7 +170,7 @@ h5 {
 #navBar {
     display: flex;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     background-color: greenyellow;
 
     justify-content: space-around;
@@ -227,14 +227,14 @@ h5 {
 }
 */
 
-#demand {
+header {
 
     display: flex;
     justify-content: space-around;
 
 }
 
-#demand #innoQuote div {
+header #innoQuote div {
 
     padding: 0;
     margin: 0;
@@ -257,6 +257,7 @@ h5 {
 
 #innoQuote h1 {
     color: black;
+
 }
 
 #demand {
@@ -275,28 +276,36 @@ h5 {
 
 #features {
 
-    flex-basis: 100%;
+    width: 45%;
     font-size: 30px;
-    font-weight: 700;
-    justify-items: space-between;
+
 
 }
 
 .featAbout {
     display: flex;
-    align-items: center;
-    justify-items: center;
+    /* align-items: center; */
+    justify-items: space-around;
     width: 100%;
+    border-top: 3px black solid;
+    padding: 3%;
+    padding-top: 6%;
+}
+
+body {
+    padding: 0 5%;
+
 }
 
 #about {
 
-    width: 49%;
+    width: 45%;
     font-size: 33px;
 }
 
 .middle-img img {
     width: 100%;
+    padding: 3% 0;
 }
 
 /*
@@ -308,26 +317,34 @@ h5 {
 }
 */
 
-#container {
-    display: -webkit-box;
-    display: -ms-flexbox;
+#tripleSection {
+
     display: flex;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     font-size: 33px;
+    justify-content: space-between;
+    border-bottom: 3px black solid;
+    padding: 3% 0;
+
 }
 
+#tripleSection div {
+    width: 30%;
+
+}
+
+
 address {
-    /*
-    padding: 2% 5%;
-    margin-left: 2em;
-*/
+    padding-top: 3%;
+    margin-right: 0;
+}
+
+address h1 {
+    font-size: 28px;
 }
 
 footer {
-    padding: 2% 5%;
     text-align: center;
-
 }
 
 /**
