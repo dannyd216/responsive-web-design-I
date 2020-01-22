@@ -142,6 +142,7 @@ table {
     padding: 0;
     margin: 0;
     /* max-width: 100%;*/
+    font-size: 62.5%;
     border: 1px solid grey;
 }
 
@@ -360,6 +361,17 @@ footer {
  *NEED TO ADD MEDIA QUERIES FOR 800px AND 500px
 */
 
-@media (max-width: 800px) {}
+@media (max-width: 800px) {
+    p {
+        font-size: 1.5rem;
+    }
+}
 
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+
+    body h1 {
+        font-size: 2rem;
+        color: gold;
+    }
+
+}
