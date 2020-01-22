@@ -141,7 +141,7 @@ table {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* max-width: 100%;*/
+    max-width: 1400px;
     font-size: 62.5%;
     border: 1px solid grey;
 }
@@ -169,7 +169,7 @@ h5 {
 /* Your code starts here! */
 
 #containerMax {
-    max-width: 1400px;
+    width: 90%;
 }
 
 #navBar {
@@ -178,8 +178,8 @@ h5 {
     /* position: fixed; */
     /* background-color: greenyellow; */
 
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
 /* 
@@ -188,6 +188,7 @@ h5 {
 } */
 
 #navBar #links {
+    display: flex;
     justify-content: space-between;
 
 }
@@ -242,7 +243,7 @@ header {
     width: 100%;
 
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 
 }
 
@@ -364,14 +365,21 @@ footer {
 @media (max-width: 800px) {
     p {
         font-size: 1.5rem;
+
+        color: gold;
     }
 }
 
 @media (max-width: 500px) {
-
-    body h1 {
+    body {
         font-size: 2rem;
-        color: gold;
+        background-color: deeppink;
+
     }
+
+    #circle {
+        display: none;
+    }
+
 
 }
