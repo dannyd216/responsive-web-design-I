@@ -167,18 +167,24 @@ h5 {
 
 /* Your code starts here! */
 
+#containerMax {
+    max-width: 1400px;
+}
+
 #navBar {
     display: flex;
     width: 100%;
     /* position: fixed; */
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 
     justify-content: space-around;
+    align-items: center;
 }
 
+/* 
 #navBar div {
     width: 100%;
-}
+} */
 
 #navBar #links {
     justify-content: space-between;
@@ -193,73 +199,72 @@ h5 {
 #links a {
     width: 60%;
     justify-content: space-between;
+    margin: 0;
+    padding: 35px;
+    text-decoration: none;
+    color: gray;
 
+}
+
+#innoQuote {
+    display: flex;
 }
 
 #innoQuote div {
-    width: 48%;
+    width: 45%;
+    border: 1px red solid;
 }
 
-#quote h1 .word {
+#quote {
+    width: 45%;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 50px;
+}
+
+
+/* 
+#innoQuote #quote h1 .word {
     display: flex;
     justify-content: center;
     align-content: center;
-}
+} */
 
-
-
-#circle div {
+/* 
+#circle {
     width: 48%;
-}
 
-/*
+} */
 
-#innoQuote {
-    width: 49%;
-    height: 280px;
-}
-
-.word {
-    font-size: 95px;
-}
-
-#circleImg {
-    widows: 49%;
-}
-*/
 
 header {
+    width: 100%;
 
     display: flex;
     justify-content: space-around;
 
 }
 
+/* 
 header #innoQuote div {
 
     padding: 0;
     margin: 0;
     width: 48%;
+} */
 
+
+button {
+    margin: 0;
+    font-size: 35px;
 }
 
 
-.button {
-    display: block;
-    margin: 0 25%;
-    font-size: 40px;
-}
-
-
-.button:hover {
+button:hover {
     background-color: grey;
     color: deepskyblue;
 }
 
-#innoQuote h1 {
-    color: black;
-
-}
 
 #demand {
 
@@ -290,7 +295,6 @@ header #innoQuote div {
     width: 100%;
     border-top: 3px black solid;
     padding: 3%;
-    padding-top: 6%;
 }
 
 body {
@@ -334,7 +338,6 @@ body {
 
 }
 
-
 address {
     padding-top: 3%;
     margin-right: 0;
@@ -344,8 +347,13 @@ address h1 {
     font-size: 28px;
 }
 
+address p {
+    font-weight: bold;
+}
+
 footer {
     text-align: center;
+    font-weight: bold;
 }
 
 /**
