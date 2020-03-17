@@ -419,7 +419,75 @@ ul {
 /******MEDIA QUERIES*********************/
 
 @media (max-width: 800px) {
+
+	nav {
+		flex-direction: column-reverse;
+
+		margin: 0 auto;
+
+		width: 100%;
+
+		border: 1px pink solid;
+	}
+
+	#navLinks {
+		justify-content: space-evenly;
+
+		justify-items: center;
+
+		
+
+		padding: 4%;
+
+		width: 100%;
+
+		font-size: 13px;
+
+
+		margin: 0 auto;
+
+		border: 1px solid green;
+
+
+
+
+	}
+
+	#logo {
+		align-items: center;
+
+		justify-content: center;
+
+		margin: 0 auto;
+	}
 	
+	#circleImage {
+		display: none;
+	}
+
+	#innoDiv {
+		align-items: center;
+
+		justify-content: center;
+
+		margin: 0 auto;
+	}
+
+	#midSection {
+
+		margin: 0 auto;
+	}
+
+	#servProdVis  div{
+
+		padding: 0 2%;
+
+	}
+
+	address {
+		font-size: 20px;
+	}
+
 
 }
 
