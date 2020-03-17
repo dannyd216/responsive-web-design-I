@@ -600,7 +600,49 @@ ul {
 /*****DESKTOP VIEW***********/
 @media (max-width: 800px) {
 
+	#outerDiv2 {
 
+		display: flex;
+
+		flex-direction: column;
+	}
+
+		#navLinks2 {
+
+			display: flex;
+	
+			flex-direction: column;
+	
+			width: 100%;
+			
+			text-align: center;
+	
+			margin: 0 auto;
+	
+			padding: 4%;
+	
+			color: magenta;
+	
+			/* border: 2px black solid; */
+		}
+
+	#servHeadImg img {
+		max-width: 100%;
+	}
+
+	#services {
+
+		text-align: center;
+
+		color: coral;
+	}
+
+	#someFacts h3 {
+
+		color: aqua;
+
+		text-align: center;
+	}
 
 
 
