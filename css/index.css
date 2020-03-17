@@ -109,7 +109,11 @@ nav {
 	/* border: 5px red dashed; */
 
 	width: 70%;
-	padding: 15px;
+	/* padding: 15px; */
+
+	justify-content: center;
+
+
 
 	
 }
