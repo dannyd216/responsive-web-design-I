@@ -3,396 +3,420 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-
 /* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {}
-
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-    line-height: 1;
+	line-height: 1;
 }
-
-ol,
-ul {
-    list-style: none;
+ol, ul {
+	list-style: none;
 }
-
-blockquote,
-q {
-    quotes: none;
+blockquote, q {
+	quotes: none;
 }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-    content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
 
 /* Set every element's box-sizing to border-box */
-
 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    /* max-width: 100%;*/
-    border: 1px solid grey;
+	box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     height: 100%;
-    /* font-family: "Titillium Web", sans-serif; */
-
-    font-family: 'Gayathri', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    /* font-family: "Bangers", cursive;*/
-    font-family: 'Gayathri', sans-serif;
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
-
-/* Your code starts here! */
-
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
-/* nav {
-    display: inline-block;
-    border: 3px dashed aqua;
-    width: auto%;
-    padding: 0;
-    margin: 0;
-    background-color: darkgreen;
-} */
+/*OUTER DIV*/
 
 
 /*
-section {
-    padding: 2% 5%;
-}
+
+	SET THE BODY WIDTH 
+
 */
 
-/*
-nav #navlogo {
-    width: 20%;
-    display: inline-block;
+
+
+body {
+	width: 100%;
+	max-width: 900px;
+}
+
+#outerDiv {
+
+	/* border: 3px blueviolet dashed; */
+
+	margin: 2%;
+}
+
+/*NAV*/
+
+nav {
+
+	display: flex;
+} /*NAV SECTION DIV*/
+
+
+#navLinks {
+	/* display: inline-block; */
+
+	/* border: 5px red dashed; */
+
+	width: 70%;
+	padding: 15px;
+}
+
+#navLinks a {
+	padding: 3px;
+	letter-spacing: 4px;
+}
+
+#logo {
+	/* border: 3px darkgreen inset; */
+
+	/* display: inline-block; */
+
+	width: 25%;
+	padding: 15px;
+	
+}
+
+#logo img {
+	max-width: 100%;
+}
+
+/*FIRST SECTION*/
+
+#firstSection {
+
+	/* border: 3px dotted magenta; */
+
+	display: flex;
+	height: 60vh;  /*I ADDED HEIGHT AND WAS ABLE TO FIX THE BIGNESS*/
 
 }
+
+#innoDiv {
+
+	/* border: 3px outset darkorchid; */
+	width: 40%;
+	text-align: center;
+	/* display: inline-block; */
+	padding-bottom: 25%;
+	padding-top: 8%;
+
+	}
+
+/* 
+PADDING ON THE INSIDE
+MARGIN ON THE OUTSIDE
+******
+TRBL
+PADDING: 29PX;
+TB RL
+PADDING: 29PX 20PX;
+T RL B
+PADDING: 1PX 49PX 22PX;
+T R B L
+PADDING: 3PX 5PX 2PX 5PX;
 */
 
-#navLogo img {
-    width: 20%;
+
+#innoDiv h1{
+	font-size: 60px;
+	max-width: 100%;
+	padding-top: 25px;
+	
+}
+
+#innoDiv button {
+
+	font-size: 30px;
+}
+
+#circleImage {
+	/* border: 3px dashed lightseagreen; */
+	width: 49%;
+	/* display: inline-block; */
+	/* margin: 12% auto; */
+	padding-left: 4%;
+	padding-top: 7%;
 
 }
 
-/*
-
-#links {
-    display: inline-block;
-    width: 100%;
-
-}
-*/
-
-#navBar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    margin: 20px;
-    padding: 20px;
-    font-size: 35px;
-    position: fixed;
-    background-color: greenyellow;
-}
-
-/*
-
-#innoQuote {
-    width: 49%;
-    height: 280px;
-}
-
-.word {
-    font-size: 95px;
-}
-
-#circleImg {
-    widows: 49%;
-}
-*/
-
-#demand {
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex;
-
-    -ms-flex-preferred-size: 60%;
-
-    flex-basis: 60%;
-
-}
-
-/*
-
-#topSection {
-
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: space-between;
-    
-*/
-
-/* display: inline-block; 
-    background-color: white;
-    text-align: center;
-    width: 50%;
-    padding-top: 20%*/
-
-
-/*#innoQuote, #circleImg {
-    display: inline-block;
-}
-*/
-
-/*.doubleSection div {
-    background-color: gray;
-    width: 50%;
-    padding: 0;
-    margin: 0;
-    display: inline;
-
-}
-*/
-
-/*
-.tripleSection div {
-    background-color: khaki;
-    width: 30%;
-}
-*/
-/*
-
-a {
-    padding: 15px;
-    text-decoration: none;
-    color: grey;
-}
-*/
-
-/*
-div {
-    padding: 20px;
-}
-*/
-
-.button {
-    display: block;
-    margin: 0 25%;
-    font-size: 40px;
+#circleImage img {
+	max-width: 100%;
+	/* margin: 0 auto; */	
 }
 
 
-.button:hover {
-    background-color: grey;
-    color: deepskyblue;
-}
+/*MIDDLE SECTION*/
 
-#innoQuote h1 {
-    color: black;
-}
+#midSection {
 
-#demand {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+	border-top: 3px black solid;;
+	border-bottom: 3px black solid;
 
 }
 
-#doubleSection {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-line-pack: center;
-    align-content: center;
+#midSection h2 {
+
+	font-size: 30px;
+	text-align: left;
+	
 }
 
-#features {
-    -ms-flex-preferred-size: 49%;
-    flex-basis: 100%;
-    font-size: 33px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-items: space-between;
+#midSection p {
 
+	font-size: 20px;
+	text-align: justify;
+
+}
+
+#featAbout {
+
+	/* border: 2px pink solid; */
+	/* display: inline-block; */
+
+	/* margin: 4%; */
+
+	display: flex;
+}
+
+#feat {
+
+	/* display: inline-block; */
+	width: 48%;
+	text-align: justify;
+	margin: 1% 1% 3% 0;
 }
 
 #about {
+	/* display: inline-block; */
+	width: 48%;
+	text-align: justify;
+	margin: 0% 1% 3% 1%;	
 
-    width: 49%;
-    font-size: 33px;
 }
 
-.middle-img img {
-    width: 100%;
+
+/* MIDDLE IMAGE AREA */
+
+#midImg img{
+	/* max-width: 100%; */
+	width: 100%;
+}
+
+/* SERVICES PRODUCT VISION  */
+
+#servProdVis {
+    display: flex;
+
+	margin: 1% 1% 0 2%;
+
+    justify-content: space-between;
+    
+}
+
+#servProdVis div {
+
+    justify-content: space-around;
+}
+
+
+
+#serv {
+	
+}
+
+#prod {
+	
+
+}
+
+#vision {
+	
+}
+
+
+
+/* BOTTOM SECTION */
+
+
+address {
+	font-size: 1em;
+	/* padding: 2% 5%; */
+	}
+
+
+
+footer {
+	font-size: 1em;
+
+	text-align: center;
+
+	font-weight: bold;
+}
+
+
+/*
+
+SERVICES PAGE
+
+*/
+
+
+/*HEADER*/
+
+#servHeadImg img {
+	max-width: 100%;
+	width: 100%;
+}
+
+#services h3 {
+	font-size: 30px;
+}
+
+#services p {
+	font-size: 18px;
+	font-weight: bold;
+	justify-content: justify;
 }
 
 /*
 
-.middle-img img {
+MAIN SECTION
 
-    padding: 0;
-    width: 100%;
-}
 */
 
-#container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    font-size: 33px;
+
+#mainSection {
+
+	display: flex;
+	/* width: 800px; */
+	flex-wrap: wrap;
+
+	
+
+	border-top: black solid 2px;
+	border-bottom: black solid 2px;
+
+	justify-content: space-around;
+	justify-content: space-between;
+
+
 }
 
-address {
-    /*
-    padding: 2% 5%;
-    margin-left: 2em;
+#mainSection div {
+	width: 48%;	
+	justify-content: space-around;
+	justify-content: space-between;
+
+	margin: 2% 0;
+
+	background-color: gainsboro;
+	border: 2px solid black;
+
+	padding: 2%;
+
+
+}
+
+#mainSection p {
+
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#mainSection button {
+
+	border: black 1px solid;
+	border-radius: 3px;
+}
+
+/*
+
+BOTTOM SECTION
+
 */
+
+#bottomSection {
+
+	display: flex;
+
+	padding-top: 2%;
+	
+	font-weight: bold;
+
+	justify-content: space-between;
+
+	justify-content: space-around;
+
+	padding-bottom: 10%;
+
+	border: green 2px solid;
+
 }
 
-footer {
-    padding: 2% 5%;
-    text-align: center;
+/*SOMEFACTS DIV*/
 
+
+
+#someFacts p {
+
+	text-align: justify;
+
+	padding-right: 9%;
 }
+
+ul {
+	list-style: disc;
+
+	list-style-position: inside;
+}
+
+
+
+
+
+
